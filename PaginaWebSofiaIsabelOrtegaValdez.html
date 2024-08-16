@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Página Web</title>
+    <!-- Enlaces a Bootstrap CSS y JavaScript -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+    <style>
+        /* Estilos CSS aquí */
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .container {
+            max-width: 960px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        .section {
+            background-color: #fff;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+            padding: 20px;
+        }
+        .button-container {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+        }
+        .button {
+            width: 100px;
+            height: 100px;
+            background-color: #ff69b4; /* Cambiado a rosado */
+            color: #fff;
+            text-align: center;
+            line-height: 100px;
+            font-size: 18px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #ff1493; /* Color rosado más oscuro para hover */
+        }
+        .section-text {
+            margin-bottom: 20px;
+        }
+        .left {
+            float: left;
+            width: 50%;
+        }
+        .right {
+            float: right;
+            width: 50%;
+        }
+        .clear {
+            clear: both;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Tatto estudio Sofia mi proyecto en clase</h1>
+</header>
+
+<div class="container">
+
+    <section class="section">
+        <div class="button-container">
+            <a href="#texto" class="button">Texto</a>
+            <a href="#carousel" class="button">Carousel</a>
+            <a href="#mapas" class="button">Mapas</a>
+            <a href="#formulario" class="button">Formulario</a>
+        </div>
+    </section>
+
+    <section id="texto" class="section">
+        <div class="left">
+            <h2>Texto</h2>
+            <p>El estilo de tatuaje anime se caracteriza por capturar la estética distintiva del arte japonés manga y anime, empleando líneas definidas y colores vibrantes. Los motivos suelen incluir personajes emblemáticos del anime y símbolos reconocibles que evocan emociones intensas y elementos de fantasía propios del género. Estos tatuajes no solo son una expresión de admiración por la cultura pop japonesa, sino también una manera de transmitir historias, emociones y conexiones personales con los personajes y universos del anime mesclando el estilo neo tradicional 
+            Trabajo realizado por: Sofia Isabel Ortega Valdez
+    </p>
+        </div>
+        <div class="right">
+            <img src="https://image.civitai.com/xG1nkqKTMzGDvpLrqFT7WA/f99cf367-b171-4487-fd87-af7b3d5be500/width=450/00068-575527096.jpeg" alt="Imagen">
+        </div>
+        <div class="clear"></div>
+    </section>
+
+    <section id="carousel" class="section">
+        <h2>Carousel</h2>
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/360050451/original/82d0a123fe4f7f956891f1ec023ac85e63fa62fa/make-a-unique-anime-tattoo-design-for-you.png" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/337705715/original/987159c8ec49ff719d3d6592bc1e466c17b02d4e/create-unique-custom-tattoo-design.png" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/333235895/original/174f5118821a77495cd18d7b38089352bbccdd5e/draw-a-anime-tattoo-for-you.png" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://i.pinimg.com/736x/2c/4e/cc/2c4ecc32ec1238213957d3a178124754.jpg" alt="Fourth slide">
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="https://i.pinimg.com/564x/a7/e8/4e/a7e84e0e23670290c1880046e383acce.jpg" alt="Fifth slide">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    
+    <section id="mapas" class="section">
+        <div class="left">
+            <h2>Maps</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2413.0294840555966!2d-74.00978598426946!3d40.71792987923046!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2595caccf107b%3A0x714b5fb4f4ef2de3!2sSoul%20Anchor!5e0!3m2!1sen!2sus!4v1621945016444!5m2!1sen!2sus" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="right">
+            <h2>Youtube</h2>
+            <iframe src="https://youtu.be/gCJNMhopjjo?si=cnbmeIyivt-z2G_l" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <div class="clear"></div>
+    </section>
+
+ <section id="texto" class="section">
+        <div class="left">
+            <h2>acerca de : </h2>Somos un estudio que realiza tatuajes personalizados haciendo diseños de autor con nuestros artistas tomando tu idea y adaptandola al estilo que nosotros trabajamos realiza este formulario con tus datos e ideas :)
+
+<img  width = 50% src="https://ae01.alicdn.com/kf/H40501b066517429596ecf04ff895c39db/Pegatina-de-tatuaje-de-2-piezas-diosa-del-sue-o-est-tica-flor-de-color-brazo.jpg" />
+
+<div>
+    <img  width = 50% src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/336149174/original/19ace06d37d1f7a4d3b7c557496d4e170067a7c5/create-a-anime-tattoo.jpg" />
+
+</div>
+    <section id="formulario" class="section">
+        <h2>Formulario</h2>
+        <form action="submit.php" method="POST">
+            <div class="form-group">
+                <label for="name">Nombre para agendar cita:</label>
+                <input type="text" class="form-control" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Cotizacion. mensaje de tu idea para personalizarla :) gracias por tu compra  : </label>
+                
+                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </section>
+
+</div>
+</body>
+</html>
+
+
+
